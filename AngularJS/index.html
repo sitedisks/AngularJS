@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8" />
+		<title>Test</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="js/angular.min.js" type="text/javascript"></script>
+		<script type="text/javascript" type="text/javascript" >
+  
+			//  http://zouyesheng.com/angular.html
+			var BoxCtrl = function($scope, $element){
+				//var e = $element.children().eq(0);
+				// JQuery instead!
+				var ef = $('#box');
+				$scope.wi = ef.width();
+				$scope.hi= ef.height();
+		 
+		   
+				$scope.enlarge = function(){
+					$scope.wi = parseInt($scope.wi) + 10;
+					$scope.hi = parseInt($scope.hi) + 10;
+				}
+		   
+				$scope.$watch('wi', function(to, from){
+						ef.width(to);
+						$scope.message = "you changed width";
+					}
+				);
+		   
+				$scope.$watch('hi', function(to, from){
+						ef.height(to);
+						$scope.message = "you changed height";
+				    }
+				 ); 
+		    }
+			
+			function TestCtrl_t() {
+			
+			}
+			
+			var TestCtrl = function($scope, $element) {
+				$scope.a = "123";
+				
+				$scope.click = function() {
+					$scope.a = "click to change";
+				}
+			}
+			
+			/*
+			var GiveCtrl = function($scope, $element) {
+				$scope.objList = [
+					{name: 'A'}
+					,{name: 'B'}
+					,{name: "C"}
+					];
+			}*/
+			
+			function GiveCtrl($scope, $element) {
+				$scope.objList = [
+					{name: 'A'}
+					,{name: 'B'}
+					,{name: "C"}
+					];
+			}
+			
+			var FormCtrl = function($scope){
+  
+				$scope.see = function(){
+				  console.log($scope.test_form);
+				  console.log($scope.test_form.a);
+				  var i = 44;
+				  console.log(i);
+				}
+				
+				$scope.show = function() {
+					console.log($scope.c);
+				}
+			}
+			
+			var SortCtrl = function($scope) {
+				$scope.data = [
+					{name: 'B', age: 4}
+					,{name: 'A', age: 1}
+					,{name: 'D', age: 3}
+					,{name: 'C', age: 3}
+				];
+			}
+			//angular.bootstrap(document.documentElement);
+		</script>
+	</head>
+	
+	<body>
+		<div ng-controller="BoxCtrl" >
+			<div id="box" style="width: 100px; height: 100px; background-color: blue;" ng-click="enlarge()"></div>
+			<p>{{wi}} x {{hi}}</p> 
+			<p>{{message}}<p>
+			<p>W: <input type="text" ng-model="wi" /></p>
+			<p>H: <input type="text" ng-model="hi" /></p>
+		</div>
+		<div id="test" ng-controller="TestCtrl" ng-click="click()">
+			{{a}}
+			<input type="text" ng-model="a" />
+		</div>
+		
+		<div ng-controller="GiveCtrl" ng-init="a=[1,2,3,4];">
+		
+			<ul ng-repeat="item in objList">
+				<li>{{$index}} --> {{item.name}}</li>
+			</ul>
+			<ul ng-repeat="dd in a">
+				<li>{{dd}}</li>
+			</ul>
+			
+			<div ng-init="d=2">
+				<ul ng-switch on="d">
+				  <li ng-switch-when="1">1</li>
+				  <li ng-switch-when="2">2</li>
+				  <li ng-switch-default>other</li>
+				</ul>
+			  </div>
+		</div>
+		
+		<form name="test_form" ng-controller="FormCtrl">
+			Name: 
+			<input type="text" name="a" required ng-model="a"  /><br/>
+			Email:
+			<input type="email" name="b" required ng-model="b" />
+			<div ng-click="see()">Form valid? {{ test_form.$valid }}</div>
+			<div>Does the form been touched? {{ test_form.$dirty}}</div> 
+			
+			<select ng-model="c" ng-options="x for x in o" ng-change="show()" ng-init="o=[0,1,2,3]; c=o[1];">
+			  <option value="">Empty Space</option>
+			</select>
+		</form>
+  
+		<div ng-controller="SortCtrl">
+			{{ data | orderBy: 'age' }} <br />
+			{{ data | orderBy: '-age' }} <br />
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="start">
+	<head>
+		<title>AugularJS and me</title>
+	</head>
+	<body>
+    	<!--
+		<div ng-controller='HelloController'>
+			<p>{{greeting.text}}, World</p>
+			
+			Name: <input type="text" ng-model="namein" /> {{namein}}
+			
+			<ul>
+				<li ng-repeat="item in customers | filter: namein">{{item.name}}</li>
+			</ul>
+		</div>-->
+		
+		<p>jqLite functionality for jQuery DOM</p>
+		<h2>The role of routes</h2>
+		<p>1. Load the view (template) id by route</p>
+		<p>2. Load the partials of the page</p>
+        <a href="#View1">Customer Name</a>
+        <a href="#View2">Customer City</a>
+        
+        <ng-view></ng-view>
+        
+        <h2>How you get the data</h2>
+		<p>Get data from Factory, Service, Provider - Allow us to encapsulate common functionality.</p>
+        <p>The difference between the three is just the way in which they create the object that goes and gets the data</p>
+        
+        <ul>
+        	<li><b>Factory</b>: Create an <strong>object</strong> of the factory and return it</li>
+            <li><strong>Service</strong>: Standard function that uses the <strong>this</strong> keyword to define</li>
+            <li><strong>Provider</strong>: <strong>$get</strong> you define and it can be used to get the ojbect that return the data</li>
+        </ul>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="js/soa.js"></script>
+		
+	</body>
+</html>

@@ -1,0 +1,11 @@
+<h2>Show Orders</h2>
+
+{{message}}
+
+<ul>
+	<li ng-repeat="item in orders">
+    	<a href="#ShowOrder/{{item.id}}">
+    		{{item.name}}
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html ng-app>
+	<head>
+		<meta charset="utf-8">
+		<title>Angular SiteDisks</title>
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+		
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="js/angular.min.js" type="text/javascript"></script>
+		<script src="js/underscore.min.js" type="text/javascript"></script>
+		<script src="js/site.js" type="text/javascript"></script>
+		<style type="text/css">
+			.done-true{
+				text-decoration: line-through;
+				color: grey;
+			}
+			.done-false{
+			
+			}
+		</style>
+	</head>
+	<body>
+		<p>Nothing here {{'yet' + '!'}} </p>
+
+		<div ng-controller="TodoCtrl">
+			<div>
+				One way binding:
+				<ul>
+					<li>{{formTodoText}}</li>
+					<li>ng-controller</li>
+					<li>ng-style</li>
+					<li>ng-init</li>
+					<li>ng-class</li>
+					<li>ng-src</li>
+					<li>ng-href</li>
+					<li>ng-checked</li>
+					<li>ng-disabled</li>
+					<li>ng-selected</li>
+					<li>ng-readonly</li>
+				</ul>
+				Two way binding:
+				<ul>
+					<li>ng-model</li>
+					<li>ng-model-instant</li>
+				</ul>
+				Event binding
+				<ul>
+					<li>ng-click</li>
+					<li>ng-change</li>
+					<li>ng-dblclick</li>
+					<li>ng-mousedown</li>
+					<li>ng-mouseleave</li>
+					<li>ng-mousemove</li>
+					<li>ng-mouseover</li>
+					<li>ng-mouseup</li>
+					<li>ng-submit</li>
+				</ul>
+			</div>
+			<h2>Total todos: {{getTotalTodos()}}</h2>
+			<ul class="list-unstyled">
+				<li ng-repeat="item in todos">
+					<span class="done-{{item.done}}">{{item.text}}</span>
+					<input type="checkbox" ng-model="item.done">
+				</li>
+			</ul>
+			
+			<form class="form-horizontal">
+				<input type="text" ng-model="formTodoText" ng-model-instant>
+				<button class="btn" ng-click="addTodo()"><i class="glyphicon-plus"></i> Add</button>
+			</form>
+			
+			<button class="btn-lg" ng-click="clearComplete()"><i class="glyphicon-trash"></i> Delete</button>
+			
+		</div>
+	</body>
+</html>

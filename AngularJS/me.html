@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<title>AugularJS and me</title>
+	</head>
+	<body>
+		<div ng-controller='HelloController'>
+			<p>{{greeting.text}}, World</p>
+			
+			Name: <input type="text" ng-model="namein" /> {{namein}}
+		</div>
+		<div ng-controller="cwanController">
+			{{me.alpha + ' - ' + me.beta}} <br/>
+			
+			<h3>Looping with the ng-repeat Directive</h3>
+			<ul>
+				<li ng-repeat="data in datalist">{{data}}</li>
+			</ul>
+			
+			<h3>More complex example</h3>
+			<ul>
+				<li ng-repeat="item in todo | orderBy:'task'">{{item.task + ' - ' + item.status | uppercase}}</li>
+			</ul>
+		</div>
+		<div>
+			<p>ng- is an Angular directive</p>
+			<p>ng-app is the kick start</p>
+			<p>ng-model: what it does is behind the scenes it's going to add a property up in the memory
+			called "name" into what's called "the scope". This is making an empty ViewModel then filling it with a name
+			property. All you need is the data binding expression in the controller.js</p>
+			
+			<p> The directive ng-model is the magic two way data binding: you give the input a property in memory called: "namein"</p>
+		</div>
+		<div ng-controller="SimpleController">
+			<input type="text" ng-model="nameText" />
+			<ul>
+				<li ng-repeat="personName in customers | filter: nameText | orderBy: 'name'">{{personName.name}} - {{personName.city}}</li>
+			</ul>
+		</div>
+		
+		<h2>Modules, Routes and Factories</h2>
+		<p>Module can have something off of it called a config function, and it can be defined to use different routes.</p>
+		<p>When you define a route in AugularJS you define two things</p>
+		<ul>
+			<li>View</li>
+			<li>Controller</li>
+		</ul>
+		<p>A given controller would then of course have access to the scope object which then the view will bind to.</p>
+		<p>Controller load the data from factory or service or providers or values</p>
+		
+		
+		
+		<script src="js/angular.min.js"></script>
+		<script src="js/controllers.js"></script>
+		
+	</body>
+</html>
