@@ -51,9 +51,7 @@ sampleApp.factory('sampleFactory', function() {
 sampleApp.controller('ShowOrdersController',function($scope, sampleFactory){
 	$scope.message = "Show orders:";
 	$scope.orders = sampleFactory.getOrders();
-})
-
-.controller('ShowOrderController',function($scope, $routeParams){
+}).controller('ShowOrderController',function($scope, $routeParams){
 	$scope.order_id=$routeParams.orderId;
 });
 

@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+    <head>
+    	<title>Your Shopping Cart</title>
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+        <style type="text/css"></style>
+	</head>
+
+    <body ng-app="cartApp">
+    	<div class="container" ng-controller='cartController'>
+        <h1>Your Order</h1>
+        <div ng-repeat='item in items'>
+        	<span>{{item.title}}</span>
+            <input ng-model='item.quantity' />
+            <span>{{item.price | currency}}</span>
+            <span>{{item.price * item.quantity | currency}}</span>
+            <button ng-click='remove($index)'>Remove</button>
+        </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+   
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+		
+			var data= [
+				{title:'Paint pots', quantity: 8, price: 3.95}
+				,{title:'Polka dots',quantity:17, price:12.95}
+				,{title:'Pebbles', quantity: 5, price: 6.95}
+			];
+			
+			var cartApp = angular.module('cartApp', ['ngRoute']);
+			
+			cartApp.controller('cartController', function($scope){
+				$scope.items = data;
+				$scope.remove = function(index) {
+					$scope.items.splice(index,1);
+				}
+			});
+			
+			
+			$(function() {
+				//alert('jQuery');
+			});
+			
+		</script>
+    </body>
+</html>

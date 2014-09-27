@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="app.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130541016707945542" remote="130541018400000000" />
-<file name="bootstrap.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130524302608348305" remote="130538274600000000" />
+<file name="app.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130544392343988698" remote="130556661000000000" />
+<file name="bootstrap.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130524302608348305" remote="130556661000000000" />
 <file name="bootstrap.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130524302630319562" remote="130538274600000000" />
+<file name="jquery.qodo.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556673574657785" remote="130556674200000000" />
+<file name="angular.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314722386" remote="130556669400000000" />
+<file name="angular-route.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314222357" remote="130556668800000000" />
+<file name="angular.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314682384" remote="130556669400000000" />
+<file name="angular-animate.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602313972343" remote="130556668800000000" />
+<file name="angular-animate.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602313982344" remote="130556668800000000" />
+<file name="angular-animate.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314062348" remote="130556668800000000" />
+<file name="angular-cookies.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314062348" remote="130556668800000000" />
+<file name="angular-cookies.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314072349" remote="130556668800000000" />
+<file name="angular-cookies.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314072349" remote="130556668800000000" />
+<file name="angular-csp.css" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314082349" remote="130556668800000000" />
+<file name="angular-loader.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314092350" remote="130556668800000000" />
+<file name="angular-loader.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314092350" remote="130556668800000000" />
+<file name="angular-loader.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314102351" remote="130556668800000000" />
+<file name="angular-messages.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314102351" remote="130556668800000000" />
+<file name="angular-messages.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314112351" remote="130556668800000000" />
+<file name="angular-messages.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314112351" remote="130556668800000000" />
+<file name="angular-mocks.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314132352" remote="130556668800000000" />
+<file name="angular-resource.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314142353" remote="130556668800000000" />
+<file name="angular-resource.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314152353" remote="130556668800000000" />
+<file name="angular-resource.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314152353" remote="130556668800000000" />
+<file name="angular-route.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314232358" remote="130556668800000000" />
+<file name="angular-route.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314242359" remote="130556668800000000" />
+<file name="angular-sanitize.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314252359" remote="130556668800000000" />
+<file name="angular-sanitize.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314262360" remote="130556668800000000" />
+<file name="angular-sanitize.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314272360" remote="130556668800000000" />
+<file name="angular-scenario.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314502373" remote="130556669400000000" />
+<file name="angular-touch.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314512374" remote="130556669400000000" />
+<file name="angular-touch.min.js" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314522375" remote="130556669400000000" />
+<file name="angular-touch.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314532375" remote="130556669400000000" />
+<file name="angular.min.js.map" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314782389" remote="130556669400000000" />
+<file name="errors.json" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602314792390" remote="130556669400000000" />
+<file name="version.json" server="ftp.sitedisks.com.au//public_html/AngularJS/" local="130556602318482601" remote="130556669400000000" />
 </dwsync>

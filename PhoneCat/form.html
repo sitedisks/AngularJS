@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="formApp">
+	<head>
+    	<title>SiteDisks AngularJS - FORM</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+        <style type="text/css">
+        </style>
+    </head>
+	
+	<body>
+		<div class="container">
+ 			<div class="panel" ng-controller="formController">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="page-header">
+                			<h3>AngularJS App</h3>
+                           
+                            {{(todos | filter: {complete: 'false'})}}
+                		</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="page-header">
+                            <h3>AngularJS View</h3>
+
+                        </div>
+                    </div>
+                </div>
+            
+            	
+                
+            </div>
+		</div>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+		<script src="js/angular.form.js"></script>
+	</body>
+</html>
